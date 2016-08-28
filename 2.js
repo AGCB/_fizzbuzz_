@@ -1,4 +1,4 @@
-//3.js
+//2.js
 // an attempt at fizzbuzz.
 // a few things to show... function declarations, if statements,
 //		function invocations, a few shorthands.
