@@ -29,17 +29,11 @@ function fb(t, fw, bw, m1, m2) {
   	let d2 = (i % m2 === 0);
   	let output = '';
 
-  	if (d1) {
-  		output += fw;
-  	}
-  	if (d2) {
-  		output += bw;
-  	}
-  	if (output === '') {
-  		output += i;
-  	}
+  	if (d1) {output += fw;}
+  	if (d2) {output += bw;}
+  	if (output === '') {output += i;}
   	console.log(output);
   }//for loop
 
 }//function definition
-fb()
+fb();
