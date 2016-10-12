@@ -18,8 +18,8 @@
 //
 function fb(t, fw, bw, m1, m2) {
   t = t || 100;
-  fw = fw || 'urn';
-  bw = bw || 'rere';
+  fw = fw || 'Fizz';
+  bw = bw || 'Buzz';
   m1 = m1 || 3;
   m2 = m2 || 5;
   
