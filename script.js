@@ -16,24 +16,32 @@
 // and make it on multiples of 6 and 15..... please"
 // and you could run fb(569, "Buddy", "Holly", 6, 15);
 //
-function fb(t, fw, bw, m1, m2) {
-  t = t || 100;
-  fw = fw || 'Fizz';
-  bw = bw || 'Buzz';
-  m1 = m1 || 3;
-  m2 = m2 || 5;
-  
+(function() {
+    'use strict';
+    function fb(t, fw, bw, m1, m2) {
+        t = t || 100;
+        fw = fw || 'Fizz';
+        bw = bw || 'Buzz';
+        m1 = m1 || 3;
+        m2 = m2 || 5;
 
-  for (i = 1;i<=t;i++) {
-  	let d1 = (i % m1 === 0);
-  	let d2 = (i % m2 === 0);
-  	let output = '';
+        for (i = 1; i <= t; i++) {
+            let d1 = (i % m1 === 0);
+            let d2 = (i % m2 === 0);
+            let output = '';
 
-  	if (d1) {output += fw;}
-  	if (d2) {output += bw;}
-  	if (output === '') {output += i;}
-  	console.log(output);
-  }//for loop
+            if (d1) {
+                output += fw;
+            }
+            if (d2) {
+                output += bw;
+            }
+            if (output === '') {
+                output += i;
+            }
+            console.log(output);
+        }
+    }
+    fb();
+}());
 
-}//function definition
-fb();
