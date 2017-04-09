@@ -1,6 +1,6 @@
 //fizzbuzz 09032016
 // We start defining fb(); function with 5 arguments.
-// t = total, fw=fizzword bw=buzzword m1=1stMultiple m2=2nd...
+// t = total, fw=fizzword, bw=buzzword, m1=1stMultiple, m2=2ndMultiple
 //
 // We have the typical FizzBuzz problem. 
 // Print the numbers 1-100 with multiples of 3 written as "fizz"
@@ -18,6 +18,11 @@
 //
 (function() {
     'use strict';
+    var t;
+    var fw;
+    var bw;
+    var m1;
+    var m2;
     function fb(t, fw, bw, m1, m2) {
         t = t || 100;
         fw = fw || 'Fizz';
